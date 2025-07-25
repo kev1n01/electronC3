@@ -25,7 +25,8 @@
         "AppImage",
         "deb"
       ],
-      "icon": "icon.png"
+      "icon": "icon.png",
+      "maintainer": "Kevar Arnold Flores Pacheco <kevinflorespacheco01@gmail.com>"
     },
     "mac": {
       "target": "dmg",
@@ -33,7 +34,10 @@
     }
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Kevar Arnold Flores Pacheco",
+    "email": "kevinflorespacheco01@gmail.com"
+  },
   "license": "ISC",
   "description": "App de titulación UDH",
   "devDependencies": {
