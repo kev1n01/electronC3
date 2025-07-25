@@ -31,9 +31,24 @@
     "mac": {
       "target": "dmg",
       "icon": "icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
     }
   },
-  "keywords": [],
+  "keywords": [
+    "udh",
+    "copiloto",
+    "copiloto udh",
+    "investigacion UDH",
+    "proyectos UDH",
+    "ideas Copiloto",
+    "titulacion UDH",
+    "chatbot deache",
+    "deache"
+  ],
   "author": {
     "name": "Kevar Arnold Flores Pacheco",
     "email": "kevinflorespacheco01@gmail.com"
