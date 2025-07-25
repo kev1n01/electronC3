@@ -6,6 +6,8 @@ const createWindow = () => {
   const win = new BrowserWindow({
     width,
     height,
+    minWidth: 550,
+    minHeight: 700,
     // resizable: false,
     frame: true,
     titleBarStyle: 'hiddenInset',
