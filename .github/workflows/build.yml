@@ -1,0 +1,34 @@
+name: Build Electron App
+
+on:
+  push:
+    tags:
+      - 'v*'  # Solo se ejecuta al hacer push de una versión, ej. v1.0.0
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+
+    steps:
+      - name: Clonar repo
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Compilar instalador
+        run: npm run dist
+
+      - name: Subir artefactos
+        uses: actions/upload-artifact@v3
+        with:
+          name: electron-app-${{ runner.os }}
+          path: dist/
